@@ -1,0 +1,23 @@
+{
+  "name": "3_task",
+  "version": "1.0.0",
+  "description": "NPM lesson",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index",
+    "dev": "nodemon index"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": "Ben Harper",
+  "license": "ISC",
+  "dependencies": {
+    "date-fns": "^3.3.1",
+    "uuid": "^9.0.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.3"
+  }
+}
