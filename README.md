@@ -8,13 +8,13 @@ ________________________________________________________________________________
 <a name="Intro_to_Node_js"></a>
 ## Task 1: Intro to Node.js
 - In this first video we learned some basics about Node js...
-    1) Node runs on a server - not in a browser (backend not frontend)
-    2) The console is the terminal window
-    3) Global object instead of window object
-    4) Has common core modules that we explored
+    1. Node runs on a server - not in a browser (backend not frontend)
+    2. The console is the terminal window
+    3. Global object instead of window object
+    4. Has common core modules that we explored
         - os, path
-    5) CommonJS modules instead of ES6 modules
-    6) Missing some JS APIs like fetch
+    5. CommonJS modules instead of ES6 modules
+    6. Missing some JS APIs like fetch
 - How to import common core modules as well as our own functions
 - How to run node
     - type 'node' in terminal
