@@ -1,8 +1,11 @@
 # nodeJS_intro
 Introductory node js tutorial: https://www.youtube.com/watch?v=JZXQ455OT3A&list=PL0Zuz27SZ-6PFkIxaJ6Xx_X46avTM1aYw
 
+1. Intro to Node.js <a name="Intro_to_Node_js"></a>
+2. Reading and Writing files with Node.js <a name="Reading_and_Writing_files_with_Node_js"></a>
 __________________________________________________________________________________________________________________________________________
-Task 1: Intro to Node JS
+## Intro_to_Node_js
+Task 1: Intro to Node.js
 - In this first video we learned some basics about Node js...
     1) Node runs on a server - not in a browser (backend not frontend)
     2) The console is the terminal window
@@ -18,6 +21,7 @@ Task 1: Intro to Node JS
     - type 'node <filename>'
 
 __________________________________________________________________________________________________________________________________________
+## Reading_and_Writing_files_with_Node_js
 Task 2: Reading and Writing files with Node.js
 - How to read files
     - How to set encoding as a parameter
