@@ -15,3 +15,18 @@ Task 1: Intro to Node JS
     - type 'node' in terminal
 - How to run a file in node
     - type 'node <filename>'
+
+Task 2: Reading and Writing files with Node.js
+- How to read files
+    - How to set encoding as a parameter
+    - How to join the path using the common path module instead of hard coding the file path
+- How to throw an uncaught error exception with process
+- How to write to a file
+- How to append to a file
+- How to rename a file
+- How to embed to control the order of operations
+- How to delete a file
+- How to work asyncronously with promises
+- How to read and write large files with streams
+- How to create and delete a directory/folder
+- How to check if a file or directory exists
