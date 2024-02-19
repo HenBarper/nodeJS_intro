@@ -2,9 +2,11 @@
 Introductory node js tutorial: https://www.youtube.com/watch?v=JZXQ455OT3A&list=PL0Zuz27SZ-6PFkIxaJ6Xx_X46avTM1aYw
 
 ## Sections
+<a name="Sections"></a>
 1. [Intro to Node.js](#Intro_to_Node_js)
 2. [Reading and Writing Files with Node.js](#Reading_and_Writing_files_with_Node_js)
 3. [NPM Node Package Manager Modules](#NPM_Node_Package_Manager_Modules)
+4. [Node Event Tutorial](#Node_Event_Tutorial)
 __________________________________________________________________________________________________________________________________________
 <a name="Intro_to_Node_js"></a>
 ## Task 1: Intro to Node.js
@@ -20,8 +22,9 @@ ________________________________________________________________________________
 - How to run node
     - type 'node' in terminal
 - How to run a file in node
-    - type 'node <filename>'
+    - type 'node filename'
 
+[Back to top](#Sections)
 __________________________________________________________________________________________________________________________________________
 <a name="Reading_and_Writing_Files_with_Node_js"></a>
 ## Task 2: Reading and Writing Files with Node.js
@@ -39,15 +42,16 @@ ________________________________________________________________________________
 - How to create and delete a directory/folder
 - How to check if a file or directory exists
 
+[Back to top](#Sections)
 __________________________________________________________________________________________________________________________________________
 <a name="NPM_Node_Package_Manager_Modules"></a>
 ## Task 3: NPM Node Package Manager Modules
 - The difference between common core modules and NPM packages is that NPM packages are made by third parties
 - CLI: Command line interface
 - In the terminal we can install node packages globally using
-    - npm i <package-name>
-    - npm install <package-name>
-    - npm add <package-name>
+    - npm i package-name
+    - npm install package-name
+    - npm add package-name
 - How to install npm packages locally and globally
     - '-g' for global
     - npm init
@@ -56,5 +60,14 @@ ________________________________________________________________________________
 - We add the node_modules folders to a .gitignore because that folder can get really big with dependencies and linked dependencies
 - How to save dev dependencies
 - The karat in front of a dependency version: "uuid": "^9.0.1" means not to update past that version, in this example ^major.minor.patch you can update the minor version and patch but not the major version
-- You can use 'npm i <package>@<version number>' to install a specific version of a package
+- You can use 'npm i package@version-number' to install a specific version of a package
 - How to uninstall dependencies
+
+[Back to top](#Sections)
+__________________________________________________________________________________________________________________________________________
+<a name="Node_Event_Tutorial"></a>
+## Task 4: Node Event Tutorial
+- 
+
+[Back to top](#Sections)
+__________________________________________________________________________________________________________________________________________
