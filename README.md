@@ -3,7 +3,8 @@ Introductory node js tutorial: https://www.youtube.com/watch?v=JZXQ455OT3A&list=
 
 ## Sections
 1. [Intro to Node.js](#Intro_to_Node_js)
-2. [Reading and Writing files with Node.js](#Reading_and_Writing_files_with_Node_js)
+2. [Reading and Writing Files with Node.js](#Reading_and_Writing_files_with_Node_js)
+3. [NPM Node Package Manager Modules](#NPM_Node_Package_Manager_Modules)
 __________________________________________________________________________________________________________________________________________
 <a name="Intro_to_Node_js"></a>
 ## Task 1: Intro to Node.js
@@ -22,8 +23,8 @@ ________________________________________________________________________________
     - type 'node <filename>'
 
 __________________________________________________________________________________________________________________________________________
-<a name="Reading_and_Writing_files_with_Node_js"></a>
-## Task 2: Reading and Writing files with Node.js
+<a name="Reading_and_Writing_Files_with_Node_js"></a>
+## Task 2: Reading and Writing Files with Node.js
 - How to read files
     - How to set encoding as a parameter
     - How to join the path using the common path module instead of hard coding the file path
@@ -37,3 +38,9 @@ ________________________________________________________________________________
 - How to read and write large files with streams
 - How to create and delete a directory/folder
 - How to check if a file or directory exists
+
+__________________________________________________________________________________________________________________________________________
+<a name="NPM_Node_Package_Manager_Modules"></a>
+## Task 3: NPM Node Package Manager Modules
+- The difference between common core modules and NPM packages is that NPM packages are made by third parties
+- 
