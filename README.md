@@ -120,10 +120,8 @@ ________________________________________________________________________________
 
 **MODULES**
 #### fs
-- fs.existSync
-    - `if(!fs.existsSync(path.join(__dirname, 'logs'))) {`
-    -    `await fsPromises.mkdir(path.join(__dirname, 'logs'));`
-    -    `}`
+- fs.existSync(`fs.existsSync(file_name or folder_name)`)
+    - Checks whether a file or folder exists
 
 #### fs.promises
 
