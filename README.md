@@ -7,6 +7,8 @@ Introductory node js tutorial: https://www.youtube.com/watch?v=JZXQ455OT3A&list=
 2. [Reading and Writing Files with Node.js](#Reading_and_Writing_files_with_Node_js)
 3. [NPM Node Package Manager Modules](#NPM_Node_Package_Manager_Modules)
 4. [Node Event Tutorial](#Node_Event_Tutorial)
+
+[Useful Commands](#Useful_Commands)
 __________________________________________________________________________________________________________________________________________
 <a name="Intro_to_Node_js"></a>
 ## Task 1: Intro to Node.js
@@ -67,7 +69,22 @@ ________________________________________________________________________________
 __________________________________________________________________________________________________________________________________________
 <a name="Node_Event_Tutorial"></a>
 ## Task 4: Node Event Tutorial
-- 
+- Using the events modules
+- Using and extending the EventEmitter class
+- How to register and event listener
+- How to emit events
+- How to log events in a log folder
 
 [Back to top](#Sections)
 __________________________________________________________________________________________________________________________________________
+<a name="Useful_Commands"></a>
+## Useful Commands
+
+module.exports = file_or_function_name
+    makes a file or function available for import
+        const math = require('./math')
+        console.log(math.add(2, 3))
+exports.function_name = functionality(exports.add = (a, b) => a + b;)
+    Allows importing and calling of functions directly
+        const { add, sub, mul, div } = require('./math');
+        console.log("2 + 3 = " + add(2,3));

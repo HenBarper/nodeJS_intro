@@ -8,9 +8,15 @@ const path = require('path');
 const logEvents = async (message) => {
     const dateTime = `${format(new Date(), 'yyyyMMdd\tHH:mm:ss')}`;
     const logItem = `${dateTime}\t${uuid()}\t${message}`;
-    // Left off at 4:40m
+    console.log(logItem);
+    try {
+        if(!fs.existsSync(path.join(__dirname, 'logs'))) {
+            await fsPromises.mkdir(path.join(__dirname, 'logs'));
+        }
+        await fsPromises.appendFile(path.join(__dirname, 'logs', 'eventlog.txt'), logItem);
+    } catch (err) {
+        console.error(err);
+    }
 }
 
-console.log(format(new Date(), 'yyyyMMdd\tHH:mm:ss'))
-
-console.log(uuid())
+module.exports = logEvents;
