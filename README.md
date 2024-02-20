@@ -7,6 +7,7 @@ Introductory node js tutorial: https://www.youtube.com/watch?v=JZXQ455OT3A&list=
 2. [Reading and Writing Files with Node.js](#Reading_and_Writing_files_with_Node_js)
 3. [NPM Node Package Manager Modules](#NPM_Node_Package_Manager_Modules)
 4. [Node Events](#Node_Events)
+5. [How to Build a Web Server with Node.js](#How_to_Build_a_Web_Server_with_Node_js)
 
 [Useful Commands](#Useful_Commands)
 __________________________________________________________________________________________________________________________________________
@@ -78,6 +79,12 @@ ________________________________________________________________________________
 
 [Back to top](#Sections)
 __________________________________________________________________________________________________________________________________________
+<a name="How_to_Build_a_Web_Server_with_Node_js"></a>
+## Task 5: How to Build a Web Server with Node js
+- 
+
+[Back to top](#Sections)
+__________________________________________________________________________________________________________________________________________
 <a name="Useful_Commands"></a>
 ## Useful Commands
 
@@ -123,7 +130,7 @@ ________________________________________________________________________________
 #### fs
 - `fs.existsSync(file_name or directory_name)`
     - Checks whether a file or folder exists
-- `fs.mkdir(dirextory_name)`
+- `fs.mkdir(directory_name)`
     - Creates a directory
 - `fs.rmdir(directory_name)`
     - Deletes a directory
