@@ -14,12 +14,12 @@ ________________________________________________________________________________
 ## Task 1: Intro to Node.js
 - In this first video we learned some basics about Node js...
     1. Node runs on a server - not in a browser (backend not frontend)
-    2. The console is the terminal window
-    3. Global object instead of window object
-    4. Has common core modules that we explored
+    1. The console is the terminal window
+    1. Global object instead of window object
+    1. Has common core modules that we explored
         - os, path
-    5. CommonJS modules instead of ES6 modules
-    6. Missing some JS APIs like fetch
+    1. CommonJS modules instead of ES6 modules
+    1. Missing some JS APIs like fetch
 - How to import common core modules as well as our own functions
 - How to run node
     - type 'node' in terminal
@@ -89,3 +89,43 @@ ________________________________________________________________________________
     - Allows importing and calling of functions directly
         - `const { add, sub, mul, div } = require('./math');`
         - `console.log("2 + 3 = " + add(2,3));`
+
+**NODE**
+- `node filename`
+    - Runs a file with Node
+- `node start`
+    - Runs the start script from package.json
+- `node run dev`
+    - Runs the dev script from package.json
+
+**INSTALLS**
+- `npm install module_name -g`
+    - Installs the module globally
+- `npm init`
+    - Creates the package.json
+- `npm install module_name`
+    - Installs the module and sets it as a dependency in the package.json
+- `npm i module_name`
+    - Same as npm install
+- `npm i module_name --save-dev`
+- `npm i module_name -D`
+    - Installs the module as a dev dependency
+- `npm update`
+    - Looks for and updates and dependencies in the package.json
+- `npm uninstall module_name`
+    - Uninstalls the module
+- `npm un module_name`
+- `npm remove module_name`
+    - Same as npm uninstall
+
+**MODULES**
+#### fs
+- fs.existSyncs(`if(!fs.existsSync(path.join(__dirname, 'logs'))) {await fsPromises.mkdir(path.join(__dirname, 'logs'));}`)
+
+#### fs.promises
+
+#### path
+
+#### date-fns
+
+#### uuid
