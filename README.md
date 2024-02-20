@@ -122,8 +122,8 @@ ________________________________________________________________________________
 #### fs
 - fs.existSync
     - `if(!fs.existsSync(path.join(__dirname, 'logs'))) {`
-            `await fsPromises.mkdir(path.join(__dirname, 'logs'));`
-        `}`
+    -    `await fsPromises.mkdir(path.join(__dirname, 'logs'));`
+    -    `}`
 
 #### fs.promises
 
