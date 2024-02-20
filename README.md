@@ -80,11 +80,12 @@ ________________________________________________________________________________
 <a name="Useful_Commands"></a>
 ## Useful Commands
 
-- module.exports = file_or_function_name
+**EXPORTS**
+- module.exports = file_or_function_name(`module.exports = { add, sub, mul, div }`)
     - makes a file or function available for import
-        - const math = require('./math')
-        - console.log(math.add(2, 3))
-- exports.function_name = functionality(exports.add = (a, b) => a + b;)
+        - `const math = require('./math')`
+        - `console.log(math.add(2, 3))`
+- exports.function_name = functionality(`exports.add = (a, b) => a + b;`)
     - Allows importing and calling of functions directly
-        - const { add, sub, mul, div } = require('./math');
-        - console.log("2 + 3 = " + add(2,3));
+        - `const { add, sub, mul, div } = require('./math');`
+        - `console.log("2 + 3 = " + add(2,3));`
