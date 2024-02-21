@@ -151,7 +151,6 @@ ________________________________________________________________________________
 [Back to top](#Sections)
 __________________________________________________________________________________________________________________________________________
 <a name="Credits"></a>
-## Credits
 ### Contributor: Ben Harper
 Website: [BenHarperWebDev](https://henbarper.github.io/benharperwebdev/)
 
