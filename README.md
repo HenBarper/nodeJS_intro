@@ -10,6 +10,7 @@ Introductory node js tutorial: https://www.youtube.com/watch?v=JZXQ455OT3A&list=
 5. [How to Build a Web Server with Node.js](#How_to_Build_a_Web_Server_with_Node_js)
 
 [Useful Commands](#Useful_Commands)
+[Credits](#Credits)
 __________________________________________________________________________________________________________________________________________
 <a name="Intro_to_Node_js"></a>
 ## Task 1: Intro to Node.js
@@ -90,10 +91,10 @@ ________________________________________________________________________________
 <a name="Useful_Commands"></a>
 ## Useful Commands
 
-**EXPORTS**
-- module.exports = file_or_function_name(`module.exports = { add, sub, mul, div }`)
+**IMPORTS & EXPORTS**
+- `module.exports = { file_or_function_name, file_or_function_name }`
     - makes a file or function available for import
-        - `const math = require('./math')`
+- `const var_name = require('file_name')`
         - `console.log(math.add(2, 3))`
 - exports.function_name = functionality(`exports.add = (a, b) => a + b;`)
     - Allows importing and calling of functions directly
@@ -146,5 +147,11 @@ ________________________________________________________________________________
 #### uuid
 
 #### http
+
+[Back to top](#Sections)
+__________________________________________________________________________________________________________________________________________
+<a name="Credits"></a>
+### Contributor: Ben Harper
+Website: [BenHarperWebDev]("https://henbarper.github.io/benharperwebdev/")
 
 [Back to top](#Sections)
