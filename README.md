@@ -1,5 +1,5 @@
 # nodeJS_intro
-Introductory node js tutorial: https://www.youtube.com/watch?v=JZXQ455OT3A&list=PL0Zuz27SZ-6PFkIxaJ6Xx_X46avTM1aYw
+[Introductory node js tutorial](https://www.youtube.com/watch?v=JZXQ455OT3A&list=PL0Zuz27SZ-6PFkIxaJ6Xx_X46avTM1aYw)
 
 ## Sections
 <a name="Sections"></a>
@@ -14,7 +14,7 @@ Introductory node js tutorial: https://www.youtube.com/watch?v=JZXQ455OT3A&list=
 [Credits](#Credits)
 __________________________________________________________________________________________________________________________________________
 <a name="Intro_to_Node_js"></a>
-## Task 1: Intro to Node.js
+## Task 1: Intro to Node.js - [video](https://www.youtube.com/watch?v=JZXQ455OT3A&list=PL0Zuz27SZ-6PFkIxaJ6Xx_X46avTM1aYw)
 - In this first video we learned some basics about Node js...
 1. Node runs on a server - not in a browser (backend not frontend)
 1. The console is the terminal window
@@ -32,7 +32,7 @@ ________________________________________________________________________________
 [Back to top](#Sections)
 __________________________________________________________________________________________________________________________________________
 <a name="Reading_and_Writing_Files_with_Node_js"></a>
-## Task 2: Reading and Writing Files with Node.js
+## Task 2: Reading and Writing Files with Node.js - [video](https://www.youtube.com/watch?v=yQBw8skBdZU&list=PL0Zuz27SZ-6PFkIxaJ6Xx_X46avTM1aYw&index=2)
 - How to read files
     - How to set encoding as a parameter
     - How to join the path using the common path module instead of hard coding the file path
@@ -50,7 +50,7 @@ ________________________________________________________________________________
 [Back to top](#Sections)
 __________________________________________________________________________________________________________________________________________
 <a name="NPM_Node_Package_Manager_Modules"></a>
-## Task 3: NPM Node Package Manager Modules
+## Task 3: NPM Node Package Manager Modules - [video](https://www.youtube.com/watch?v=oGO_-DWTmKA&list=PL0Zuz27SZ-6PFkIxaJ6Xx_X46avTM1aYw&index=3)
 - The difference between common core modules and NPM packages is that NPM packages are made by third parties
 - CLI: Command line interface
 - In the terminal we can install node packages globally using
@@ -71,7 +71,7 @@ ________________________________________________________________________________
 [Back to top](#Sections)
 __________________________________________________________________________________________________________________________________________
 <a name="Node_Events"></a>
-## Task 4: Node Events
+## Task 4: Node Events - [video](https://www.youtube.com/watch?v=2vaTy4dkbJM&list=PL0Zuz27SZ-6PFkIxaJ6Xx_X46avTM1aYw&index=4)
 - Using the events modules
 - Using and extending the EventEmitter class
 - How to register and event listener
@@ -82,7 +82,7 @@ ________________________________________________________________________________
 [Back to top](#Sections)
 __________________________________________________________________________________________________________________________________________
 <a name="How_to_Build_a_Web_Server_with_Node_js"></a>
-## Task 5: How to Build a Web Server with Node js
+## Task 5: How to Build a Web Server with Node js - [video](https://www.youtube.com/watch?v=3ZAKY-CDKog&list=PL0Zuz27SZ-6PFkIxaJ6Xx_X46avTM1aYw&index=5)
 - How to define a port
 - How to create a minimal server
 - How to listen to a port
