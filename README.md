@@ -9,8 +9,9 @@ Introductory node js tutorial: https://www.youtube.com/watch?v=JZXQ455OT3A&list=
 4. [Node Events](#Node_Events)
 5. [How to Build a Web Server with Node.js](#How_to_Build_a_Web_Server_with_Node_js)
 
-### [Useful Commands](#Useful_Commands)
-### [Credits](#Credits)
+[Useful Commands](#Useful_Commands)
+
+[Credits](#Credits)
 __________________________________________________________________________________________________________________________________________
 <a name="Intro_to_Node_js"></a>
 ## Task 1: Intro to Node.js
