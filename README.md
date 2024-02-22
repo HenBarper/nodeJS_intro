@@ -98,10 +98,10 @@ ________________________________________________________________________________
 
 **IMPORTS & EXPORTS**
 - `module.exports = { file_or_function_name, file_or_function_name }`
-    - makes a file or function available for import
+    - Makes a file or function available for import
 - `const var_name = require('file_name')`
-        - `console.log(math.add(2, 3))`
-- exports.function_name = functionality(`exports.add = (a, b) => a + b;`)
+    - Creates a variable that allows you to use functions from an imported file
+- `exports.function_name = (parameters) => functionality` example: `exports.add = (a, b) => a + b;`
     - Allows importing and calling of functions directly
         - `const { add, sub, mul, div } = require('./math');`
         - `console.log("2 + 3 = " + add(2,3));`
@@ -135,23 +135,63 @@ ________________________________________________________________________________
     - Same as npm uninstall
 
 **MODULES**
-#### fs
+#### fs - file system
 - `fs.existsSync(file_name or directory_name)`
     - Checks whether a file or folder exists
 - `fs.mkdir(directory_name)`
     - Creates a directory
 - `fs.rmdir(directory_name)`
     - Deletes a directory
+- `fs.readFile(file_path, optional_encoding, (err, data) => {})`
+    - Reads a file
+- `fs.writeFile(file_path, data_to_write, (err) => {})`
+    - Write to a file
+- `fs.appendFile(file_path, data_to_append, (err) => {})`
+    - Append to a file
+- `fs.rename(original_file_path, new_file_path, (err) => {})`
+    - Rename a file
+- `fs.createReadStream(file_path, { encoding: 'utf8' });`
+    - Creates a stream to read large files in chunks
+- `fs.createWriteStream(file_path);`
+    - Creates a stream to write large files in chunks
 
 #### fs.promises
+- `await fs.promises.readFile(file_path, optionalEncoding)`
+    - Reads a file
+- `await fs.promises.writeFile(file_path, dataToWrite)`
+    - Write to a file
+- `await fs.promises.appendFile(file_path, dataToAppend)`
+    - Append to a file
+- `await fs.promises.rename(originalFilePath, newFilePath)`
+    - Rename a file
 
 #### path
+- `path.join(__dirname, directory_name, file_name)`
+    - Creates a file path
+- `path.extname(req.url);`
+    - Get extension from url
+- `path.parse(filePath)`
+    - Parses the file path into separate elements
 
 #### date-fns
+- `const { format } = require('date-fns');`
+- `format(new Date(), 'yyyyMMdd\tHH:mm:ss')`
+    - Creates a new date time object
 
 #### uuid
+- `const { v4: uuid } = require('uuid');`
+- `uuid()`
+    - Creates a unique id
+
+#### events
+- `const EventEmitter = require('events');`
+- `class MyEmitter extends EventEmitter {};`
+- `const myEmitter = new MyEmitter();`
+- `myEmitter.on('log', (msg) => logEvents(msg));`
 
 #### http
+- `http.createServer((req, res) => {})`
+    - Creates a basic http server
 
 [Back to top](#Sections)
 __________________________________________________________________________________________________________________________________________
