@@ -1,4 +1,4 @@
-# nodeJS_intro
+# Node.js
 [Introductory node js tutorial](https://www.youtube.com/watch?v=JZXQ455OT3A&list=PL0Zuz27SZ-6PFkIxaJ6Xx_X46avTM1aYw)
 
 ## Sections
