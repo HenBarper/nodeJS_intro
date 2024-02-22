@@ -86,6 +86,10 @@ ________________________________________________________________________________
 - How to define a port
 - How to create a minimal server
 - How to listen to a port
+- How to create an http request
+- How to use a chained ternary statement
+- How to redirect
+- How to log errors and messages
 
 [Back to top](#Sections)
 __________________________________________________________________________________________________________________________________________
