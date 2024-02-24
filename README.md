@@ -8,6 +8,7 @@
 3. [NPM Node Package Manager Modules](#NPM_Node_Package_Manager_Modules)
 4. [Node Events](#Node_Events)
 5. [How to Build a Web Server with Node.js](#How_to_Build_a_Web_Server_with_Node_js)
+6. [Introduction to Express JS](#Introduction_to_Express_JS)
 
 [Useful Commands](#Useful_Commands)
 
@@ -90,6 +91,12 @@ ________________________________________________________________________________
 - How to use a chained ternary statement
 - How to redirect
 - How to log errors and messages
+
+[Back to top](#Sections)
+__________________________________________________________________________________________________________________________________________
+<a name="Introduction_to_Express_JS"></a>
+## Task 6: Introduction to Express JS - [video](https://www.youtube.com/watch?v=jivyItmsu18&list=PL0Zuz27SZ-6PFkIxaJ6Xx_X46avTM1aYw&index=6)
+- 
 
 [Back to top](#Sections)
 __________________________________________________________________________________________________________________________________________
