@@ -96,7 +96,26 @@ ________________________________________________________________________________
 __________________________________________________________________________________________________________________________________________
 <a name="Introduction_to_Express_JS"></a>
 ## Task 6: Introduction to Express JS - [video](https://www.youtube.com/watch?v=jivyItmsu18&list=PL0Zuz27SZ-6PFkIxaJ6Xx_X46avTM1aYw&index=6)
-- 
+- How to create a basic express server
+- How to send a message to the server
+- How to send a file to the server
+- How to copy paste a highlighted section below the highlighted section `shift + alt + down arrow`
+- Routes are checked in downwards order through the code
+- We can update our app.get to look for no endpoint or a specific endpoint
+```
+app.get('^/$|/index.html', (req, res) => {
+    res.sendFile(path.join(__dirname, 'views', 'index.html'));
+});
+```
+- In the endpoint section the '^/$' indicates that the endpoint must begin and end with '/'
+- Then we have the 'or' operator followed by '/index.html'
+- This allows us to get the index.html either with or without the index.html endpoint
+- `app.get('^/$|/index(.html)?', (req, res) => {})`
+    - If we put the '.html' in parenthesis, followed by '?' it makes the extension optional
+- How to redirect from one page to another
+- How to send specific status codes
+- How to create route handlers
+- How to chain route handlers
 
 [Back to top](#Sections)
 __________________________________________________________________________________________________________________________________________
@@ -199,6 +218,63 @@ ________________________________________________________________________________
 #### http
 - `http.createServer((req, res) => {})`
     - Creates a basic http server
+
+#### express
+- Create a basic express server with just a few lines
+```
+const express = require('express')
+const app = express()
+
+app.get('/', (req, res) => {
+  res.send('hello world')
+})
+```
+- `res.send('Message');`
+    - Sends a message to the server to display
+- `res.sendFile(path.join(__dirname, 'views', 'index.html'));`
+- `res.sendFile('/path/index.html', { root: __dirname });`
+    - Both ways to send a file to the server to display
+```
+app.get('/old-page(.html)?', (req, res) => {
+    res.redirect(301, '/new-page.html'); //302 by default
+});
+```
+    - Allows us to redirect from one page to another
+        - We can include the option status code to override the default
+```
+app.get('/*', (req, res) => {
+    res.status(404).sendFile(path.join(__dirname, 'views', '404.html'));
+})
+```
+- In the above example we're sending a 404 status and directing towards our 404 page when any undefined endpoint is attempted to be accessed.
+    - The '/*' says to look for any other endpoint
+    - By including status(404) in between res and sendFile() we define the status code that is sent
+- Route Handlers
+```
+app.get('/hello(.html)?', (req, res, next) => {
+    console.log("Attempted to load hello.html");
+    next();
+}, (req, res) => {
+    res.send('Hello World!');
+})
+```
+- By passing in 'next' we can allow for a backup function
+- Route Handlers can also be chained
+```
+const one = (req, res, next) => {
+    console.log('one');
+    next();
+}
+const two = (req, res, next) => {
+    console.log('two');
+    next();
+}
+const three = (req, res) => {
+    console.log('three');
+    res.send('finished');
+}
+app.get('/chain(.html)?', [one, two. three]);
+```
 
 [Back to top](#Sections)
 __________________________________________________________________________________________________________________________________________
