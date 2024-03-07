@@ -9,6 +9,7 @@
 4. [Node Events](#Node_Events)
 5. [How to Build a Web Server with Node.js](#How_to_Build_a_Web_Server_with_Node_js)
 6. [Introduction to Express JS](#Introduction_to_Express_JS)
+7. [What is Middleware in Express JS](#What_is_Middleware_in_Express_JS)
 
 [Useful Commands](#Useful_Commands)
 
@@ -116,6 +117,12 @@ app.get('^/$|/index.html', (req, res) => {
 - How to send specific status codes
 - How to create route handlers
 - How to chain route handlers
+
+[Back to top](#Sections)
+__________________________________________________________________________________________________________________________________________
+<a name="What_is_Middleware_in_Express_JS"></a>
+## Task 7: What is Middleware in Express JS - [video](https://www.youtube.com/watch?v=y18ubz7gOsQ&list=PL0Zuz27SZ-6PFkIxaJ6Xx_X46avTM1aYw&index=7)
+- 
 
 [Back to top](#Sections)
 __________________________________________________________________________________________________________________________________________
