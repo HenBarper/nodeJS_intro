@@ -122,7 +122,35 @@ app.get('^/$|/index.html', (req, res) => {
 __________________________________________________________________________________________________________________________________________
 <a name="What_is_Middleware_in_Express_JS"></a>
 ## Task 7: What is Middleware in Express JS - [video](https://www.youtube.com/watch?v=y18ubz7gOsQ&list=PL0Zuz27SZ-6PFkIxaJ6Xx_X46avTM1aYw&index=7)
-- 
+- What is middleware? Anything between the request and the response
+    - The route handlers we created in the last tutorial are middleware too
+- Three types of middleware
+    - Built-in
+    - Custom
+        - This is what we create ourselves
+    - Middleware from third parties
+- The build-in middleware we added: `app.use(express.urlencoded({ extended: false }));`
+- `app.use` is used often to apply middleware to all routes that are coming in
+    - Just like our other http methods(get, post, put etc...), they are read from the top down
+- We created a new public folder to serve static files using `app.use(express.static(path.join(__dirname, '/public')));`
+    - We moved css directory into public
+    - We moved img directory into publc
+    - We created a text folder and moved data.txt from data directory to text directory in public directory
+- The above action allows our css, images, etc to be served and applied to our html
+- We removed the '../' from the stylesheet link in our html views to clean up
+- Custom middleware requires next()
+```
+app.use((req, res, next) => {
+    console.log(`${req.method} ${req.path}`)
+    next()
+});
+```
+- This custom middleware logs our requests and their paths to the console
+- ![terminal logger image](readme_images/terminal_logger.png)
+- We created a new folder called middleware
+    - We moved our logEvents.js file into that directory
+- LEFT OFF 9:17
+
 
 [Back to top](#Sections)
 __________________________________________________________________________________________________________________________________________
@@ -282,6 +310,11 @@ const three = (req, res) => {
 }
 app.get('/chain(.html)?', [one, two. three]);
 ```
+`app.use(express.urlencoded({ extended: false }));`
+    - Allows our app to use urlencoded data like form data
+`app.use(express.json());`
+    - Allows us to get data out of json submissions
+
 
 [Back to top](#Sections)
 __________________________________________________________________________________________________________________________________________
